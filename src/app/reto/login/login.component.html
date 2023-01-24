@@ -1,0 +1,23 @@
+<section class="vh-100 gradient-custom">
+  <section class="container py-5 h-50">
+    <section class="row d-flex justify-content-center align-items-center h-100">
+      <section class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <section class="card bg-success text-white" style="border-radius: 1rem;">
+          <section class="card-body p-5 text-center">
+            <section class="mb-md-5 mt-md-4 pb-5">
+<h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+<section>
+  <article>
+    <section class="form-outline form-white mb-4">
+      <section class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username"[(ngModel)]="userName">
+      </section>
+      <section class="form-outline form-white mb-4">
+      <label for="password">Password:</label>
+      <input type="text" class="form-control" id="password" [(ngModel)]="password">
+      </section>
+      <input class="btn btn-outline-light btn-lg px-5" (click)="login()" value="Iniciar sesión" [disabled]="habilitar()">
+      </section>
+  </article>
+</section>
